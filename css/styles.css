@@ -605,16 +605,17 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); що;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
-.modal-btn:focus{
+.modal-btn:focus {
   background-color: var(--presset-oceans);
 }
 .modal-icon {
   align-items: center;
   justify-content: center;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-title {
   color: var(--navy-blue);
@@ -628,27 +629,31 @@ body {
   width: 100%;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid var(--overlay-navy-modal);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   outline: transparent;
   padding-left: 38px;
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  transition: border-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus,
 .modal-input:hover {
-  border-color: var(--presset-oceans);
+  border-color: #4d5ae5;
 }
 .modal-input:focus + .icon-modal,
 .modal-input:hover + .icon-modal {
   fill: var(--presset-oceans);
 }
+.modal-container {
+  margin-bottom: 8px;
+}
 
 .modal-label {
   display: block;
-  color: var(--slate-tx);
+  color: var(--light-slate-tx);
   margin-bottom: 4px;
   font-size: 12px;
   font-weight: 400;
-  line-height: calc(14 / 12);
+  line-height: 1.17;
   letter-spacing: 0.48px;
 }
 .modal-wrapper {
@@ -656,10 +661,10 @@ body {
 }
 .icon-modal {
   position: absolute;
-  left: 24px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-textarea {
   width: 100%;
@@ -670,7 +675,7 @@ body {
   padding: 8px 16px;
   transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--slate-tx);
-   resize: none;
+  resize: none;
 }
 
 .chek-text {
@@ -702,7 +707,7 @@ body {
 .input-chek:checked + .chek-text span {
   background-color: var(--presset-oceans);
   border: none;
-  fill: var(--white-tx);
+  fill: #4d5ae5;
 }
 .modal-button {
   background-color: var(--primary-iris);
