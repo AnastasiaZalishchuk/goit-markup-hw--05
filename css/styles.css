@@ -590,7 +590,6 @@ body {
   background-color: var(--modal-background);
 }
 .modal-container {
-  margin-bottom: 8px;
 }
 .modal-btn {
   width: 24px;
@@ -638,6 +637,9 @@ body {
   background-color: transparent;
   transition: border-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-wrapper {
+  margin-bottom: 8px;
+}
 .modal-input:focus,
 .modal-input:hover {
   border-color: #4d5ae5;
@@ -657,10 +659,11 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.04em;
 }
 .modal-wrapper {
   position: relative;
+  margin-bottom: 16px;
 }
 .icon-modal {
   position: absolute;
@@ -676,7 +679,7 @@ body {
   border: 1px solid var(--overlay-navy-modal);
   outline: transparent;
   padding: 8px 16px;
-  transition: border color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(46, 47, 66, 0.4);
   resize: none;
   font-size: 12px;
@@ -690,7 +693,7 @@ body {
 
 .chek-text {
   display: flex;
-  align-items: center;
+  text-align: center;
 }
 .policy-link {
   color: var(--primary-iris);
