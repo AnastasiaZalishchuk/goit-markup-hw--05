@@ -663,7 +663,10 @@ body {
   fill: var(--primary-iris);
 }
 .modal-container {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+}
+.modal {
+  margin-bottom: 24px;
 }
 
 .modal-label {
