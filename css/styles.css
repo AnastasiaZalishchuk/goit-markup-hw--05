@@ -622,10 +622,7 @@ body {
   background-color: var(--presset-oceans);
   border: none;
 }
-.modal-btn:hover + .modal-icon,
-.modal-btn:focus + .modal-icon {
-  fill: #fff;
-}
+
 .modal-icon {
   align-items: center;
   justify-content: center;
