@@ -661,9 +661,9 @@ body {
 .modal-container-last {
   margin-bottom: 16px;
 }
-.modal {
+/* .modal {
   margin-bottom: 24px;
-}
+} */
 
 .modal-label {
   display: block;
@@ -706,12 +706,13 @@ body {
 }
 
 .chek-text {
-  display: flex;
   text-align: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
 }
 .policy-link {
   color: var(--primary-iris);
@@ -721,12 +722,8 @@ body {
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  display: flex;
-  margin-right: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   fill: transparent;
+  margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -734,7 +731,7 @@ body {
 .input-chek:checked + .chek-text span {
   background-color: var(--presset-oceans);
   border: none;
-  fill: #4d5ae5;
+  fill: var(--white-tx);
 }
 .modal-button {
   background-color: var(--primary-iris);

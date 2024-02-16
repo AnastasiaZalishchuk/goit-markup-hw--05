@@ -611,6 +611,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- backdrop -->
     <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button">
@@ -681,16 +683,19 @@
             />
             <label class="chek-text" for="user-privacy">
               <span class="modal-span">
-                I accept the terms and conditions of the
-                <a class="policy-link" href="">Privacy Policy</a></span
+                <svg class="chekbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the<a
+                class="policy-link"
+                href=""
+                >Privacy Policy</a
               >
-              <svg class="chekbox-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-checkmark"></use>
-              </svg>
             </label>
           </div>
-          <button class="modal-button" type="submit">Send</button>
         </form>
+        <button class="modal-button" type="submit">Send</button>
       </div>
     </div>
   </body>
