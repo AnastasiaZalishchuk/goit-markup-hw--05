@@ -460,6 +460,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  margin-right: 80px;
 }
 .footer-social-name {
   font-family: Roboto;
@@ -499,10 +500,7 @@ body {
   background-color: var(--success-green);
 }
 .footer-wrapper-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  display: block;
 }
 .form-title {
   font-size: 16px;
@@ -554,20 +552,10 @@ body {
   border-radius: 4px;
   padding: 8px 24px;
   cursor: pointer;
-  margin-left: 16px;
 }
 .icon-subscribe {
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
   fill: var(--white-tx);
   margin-left: 16px;
-}
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
 }
 
 .backdrop {
@@ -575,13 +563,18 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  padding: 72px 24px 24px 24px;
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -595,7 +588,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   background-color: var(--modal-background);
 }
 
@@ -621,6 +614,10 @@ body {
 .modal-btn:focus {
   background-color: var(--presset-oceans);
   border: none;
+}
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
+  fill: var(--white-background);
 }
 
 .modal-icon {
@@ -659,6 +656,9 @@ body {
   fill: var(--primary-iris);
 }
 .modal-container {
+  margin-bottom: 8px;
+}
+.modal-container-last {
   margin-bottom: 16px;
 }
 .modal {
@@ -679,6 +679,7 @@ body {
   margin-bottom: 16px;
 }
 .icon-modal {
+  fill: var(--navy-blue);
   position: absolute;
   left: 16px;
   top: 50%;
@@ -756,4 +757,7 @@ body {
 .modal-button:focus {
   background-color: var(--presset-oceans);
   cursor: pointer;
+}
+.modal-chekbox {
+  margin-bottom: 24px;
 }
