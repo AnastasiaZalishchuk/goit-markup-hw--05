@@ -676,7 +676,6 @@ body {
 }
 .modal-wrapper {
   position: relative;
-  margin-bottom: 16px;
 }
 .icon-modal {
   fill: var(--navy-blue);
@@ -700,6 +699,7 @@ body {
   color: rgba(46, 47, 66, 0.4);
   resize: none;
   background-color: transparent;
+  display: block;
 }
 .user-textarea:focus {
   border-color: var(--primary-iris);
